@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>song irum | Portfolio</title>
+  <meta name="description" content="song irum의 개발 포트폴리오" />
+  <meta property="og:title" content="song irum | Portfolio" />
+  <meta property="og:description" content="개발자 song irum의 프로젝트와 성장 기록" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav" aria-label="주요 메뉴">
+      <a class="logo" href="#top">song irum</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <p class="eyebrow">Developer Portfolio</p>
+      <h1>안녕하세요, 개발자로 성장 중인 <span>song irum</span>입니다.</h1>
+      <p class="hero-copy">
+        문제를 작게 나누고, 직접 만들며 배우는 것을 좋아합니다.
+        이 페이지는 제가 공부하고 만든 프로젝트를 차근차근 쌓아가는 포트폴리오입니다.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#projects">프로젝트 보기</a>
+        <a class="button secondary" href="https://github.com/thd2410-cell" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+
+    <section id="about" class="section card">
+      <p class="section-label">About</p>
+      <h2>꾸준히 만들고 개선하는 개발자</h2>
+      <p>
+        아직 채워갈 부분이 많지만, 배운 내용을 실제 결과물로 연결하는 데 집중하고 있습니다.
+        서버, 웹 개발, 자동화, 문서화처럼 실용적인 문제 해결에 관심이 있습니다.
+      </p>
+    </section>
+
+    <section id="skills" class="section">
+      <p class="section-label">Skills</p>
+      <h2>현재 다루고 있거나 공부 중인 기술</h2>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, 반응형 웹</p>
+        </div>
+        <div class="skill-card">
+          <h3>Backend / Server</h3>
+          <p>Node.js, 서버 배포, Linux/macOS 환경 관리</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools</h3>
+          <p>Git, GitHub, Docker, 문서화</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="section-label">Projects</p>
+      <h2>프로젝트</h2>
+      <div class="project-grid">
+        <article class="project-card">
+          <div>
+            <p class="project-tag">Portfolio</p>
+            <h3>GitHub Pages Portfolio</h3>
+            <p>
+              GitHub Pages로 배포할 개인 포트폴리오 웹사이트입니다.
+              자기소개, 기술 스택, 프로젝트, 연락처를 한 페이지에 정리했습니다.
+            </p>
+          </div>
+          <a href="https://github.com/thd2410-cell" target="_blank" rel="noreferrer">GitHub 보기 →</a>
+        </article>
+        <article class="project-card muted">
+          <div>
+            <p class="project-tag">Coming Soon</p>
+            <h3>다음 프로젝트를 추가하세요</h3>
+            <p>
+              완성한 과제, 토이 프로젝트, 서버 구축 기록, 자동화 스크립트 등을 여기에 추가하면 좋습니다.
+            </p>
+          </div>
+          <span>준비 중</span>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-card">
+      <p class="section-label">Contact</p>
+      <h2>함께 이야기하고 싶다면</h2>
+      <p>GitHub에서 프로젝트와 기록을 확인할 수 있습니다.</p>
+      <a class="button primary" href="https://github.com/thd2410-cell" target="_blank" rel="noreferrer">github.com/thd2410-cell</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> song irum. Built for GitHub Pages.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
